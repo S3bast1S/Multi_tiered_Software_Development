@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Medenic</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="my-login.css">
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<img src="ic_medenic_logo.png" alt="logo">
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Va rugam sa alegeti o optiune:</h4>
+						</div>
+						<div>
+							<img id="patient-img" src="ic_patient.png" alt="patient">
+							<img id="doctor-img" src="ic_doctor.png" alt="doctor">
+						</div>
+						<div>
+							<a th:href="@{/patlog}" class="btn btn-primary btn-login-left">Pacient</a>
+							<a th:href="@{/doclog}" class="btn btn-primary btn-login-right">Doctor</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
